@@ -1,3 +1,9 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navBar{
   display: flex;
   justify-content: center;
@@ -6,11 +12,11 @@
   backdrop-filter: blur(3px);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
+  max-width: 1920px;
   height: 50px;
   z-index: 1;
-  box-shadow: inset 0px -10px 10px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px -10px 10px -10px rgba(255, 0, 225, 0.727);
 }
 
 .navBar-container {
@@ -44,6 +50,7 @@
 
 .logo {
   height: 30px;
+  pointer-events: none;
 }
 
 body {
@@ -72,21 +79,21 @@ body {
 }
 
 .div-text h2 {
-  font-size: 55px;
+  font-size: 5em;
   user-select: none;
   font-family: 'Ogg-Bold';
   margin: 0;
 }
 
 .div-text p {
-  font-size: 22px;
+  font-size: 1.2em;
   user-select: none;
   font-family: 'MaisonNeue-Book';
   margin: 0;
 }
 
 .div-text p a {
-  font-size: 22px;
+  font-size: 1.2em;
   user-select: none;
   font-family: 'MaisonNeue-Book';
   margin: 0;
@@ -96,9 +103,10 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 124, 124);
-  width: 3000px;
-  height: 650px;
+  background-color: rgb(220, 220, 220);
+  width: 1920px;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .body-div1 {
@@ -106,9 +114,10 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
-  width: 3000px;
-  height: 650px;
+  background-color: #8bffde;
+  width: 1920px;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .body-div1 .div-text {
@@ -125,8 +134,9 @@ body {
   display: flex;
   justify-content: center;
   background-color: #ffec58;
-  width: 3000px;
-  height: 650px;
+  width: 1920px;
+  max-width: 100vw;
+  max-height: 100vh;
   margin-top: 10px;
 }
 
@@ -143,7 +153,7 @@ body div p a {
   flex-direction: column;
   position: fixed;
   top: 71%;
-  left: 96%;
+  left: 94.5%;
   width: 3vw;
   height: 11.1vw;
   z-index: 5;
@@ -166,7 +176,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgb(224, 224, 224);
-  width: 3000px;
+  width: 100vw;
+  max-width: 1920px;
   margin-top: 10px;
 }
 
@@ -175,8 +186,10 @@ footer p {
   font-size: 0.8em;
   font-family: Arial;
   text-align: justify;
+  margin-top: 32px;
+  margin-left: 15vw;
+  margin-right: 15vw;
   color: #000000;
-  width: 65vw;
 }
 
 .nst-container {
@@ -185,7 +198,8 @@ footer p {
   text-align: center;
   align-items: center;
   background-color: rgb(255, 0, 0);
-  width: 3000px;
+  width: 100vw;
+  max-width: 1920px;
   margin-top: 10px;
   margin-bottom: -10px;
 }
